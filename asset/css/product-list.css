@@ -1,0 +1,11 @@
+.item {
+    max-height:527px;
+}
+
+.tag{
+    border: 1px solid black;
+}
+
+.tag:hover {
+    background-color: #fff; 
+}
