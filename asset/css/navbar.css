@@ -14,9 +14,9 @@
 
 .mobile-nav {
     display: none ;
-  }
+}
 
 .nav-input:checked ~ .mobile-nav {
     display: block;
-  }
+}
   
