@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+<style>
+
+
+
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  width: 50%;
+
+}
+
+
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  top: 40%;
+  width: auto;
+  padding: 4px;
+  margin-top: -50px;
+  color: rgba(147, 146, 146, 0.68);
+  font-weight: bold;
+  font-size: 20px;
+  user-select: none;
+  -webkit-user-select: none;
+  margin-left:35%;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.row {
+  width:8%;
+}
+
+
+
+
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+  
+  
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.thumb{
+  max-height: 62%;
+  
+}
+</style>
+<body>
+
+
+
+<div class="flex relative ">
+  
+  <div class="row items-center">
+    <a class="prev mx-auto" onclick="plusSlides(-1)">▲</a>
+    <div class="thumb overflow-scroll items-center">
+      <div class="column">
+        <img class="demo cursor" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiMSBkeOPAIuiJ9f8Eh8cjrGvJoYOqMk4GFA&s"  onclick="currentSlide(1)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiMSBkeOPAIuiJ9f8Eh8cjrGvJoYOqMk4GFA&s"  onclick="currentSlide(2)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiMSBkeOPAIuiJ9f8Eh8cjrGvJoYOqMk4GFA&s" style="width:100%" onclick="currentSlide(3)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiMSBkeOPAIuiJ9f8Eh8cjrGvJoYOqMk4GFA&s" style="width:100%" onclick="currentSlide(4)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiMSBkeOPAIuiJ9f8Eh8cjrGvJoYOqMk4GFA&s" style="width:100%" onclick="currentSlide(5)" alt="">
+      </div>    
+      <div class="column">
+        <img class="demo cursor" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiMSBkeOPAIuiJ9f8Eh8cjrGvJoYOqMk4GFA&s" style="width:100%" onclick="currentSlide(6)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiMSBkeOPAIuiJ9f8Eh8cjrGvJoYOqMk4GFA&s" style="width:100%" onclick="currentSlide(6)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiMSBkeOPAIuiJ9f8Eh8cjrGvJoYOqMk4GFA&s" style="width:100%" onclick="currentSlide(6)" alt="">
+      </div>
+    </div>
+    
+    <a class="mx-auto next" onclick="plusSlides(1)">▼</a>
+  </div>
+
+  <div class="mySlides ">
+    
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiMSBkeOPAIuiJ9f8Eh8cjrGvJoYOqMk4GFA&s" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiMSBkeOPAIuiJ9f8Eh8cjrGvJoYOqMk4GFA&s" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiMSBkeOPAIuiJ9f8Eh8cjrGvJoYOqMk4GFA&s" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiMSBkeOPAIuiJ9f8Eh8cjrGvJoYOqMk4GFA&s" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiMSBkeOPAIuiJ9f8Eh8cjrGvJoYOqMk4GFA&s" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiMSBkeOPAIuiJ9f8Eh8cjrGvJoYOqMk4GFA&s" style="width:100%">
+  </div>
+  
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+</body>
+</html>
