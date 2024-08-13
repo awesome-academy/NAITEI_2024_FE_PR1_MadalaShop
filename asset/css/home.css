@@ -1,0 +1,32 @@
+.outer-circle{
+    position: absolute;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: 3px solid rgb(207, 212, 183);
+    
+}
+
+.inner-circle {
+    position: absolute;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    transform:translate(12px,10px)
+}
+
+.img-flower {
+    position:absolute;
+    z-index:-1;
+    scale:0.5;
+    object-fit:none;
+    transform:translate(350px,-400px)
+    
+}
+
+.page-sqr{
+    position:absolute;
+    width:10px;
+    height:10px;
+    background-color:black;
+}

@@ -1,9 +1,9 @@
-fetch('navbar.html')
+fetch('home.html')
 .then(response => response.text())
 .then(data => {
-    document.getElementById('content').innerHTML = data;
+    document.getElementById('home').innerHTML = data;
     const newStyleSheet = document.createElement("link");
                 newStyleSheet.rel = 'stylesheet';
-                newStyleSheet.href = '../css/navbar.css';
+                newStyleSheet.href = '../css/home.css';
                 document.head.appendChild(newStyleSheet);
 });
