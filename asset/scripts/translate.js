@@ -21,6 +21,12 @@ function translatePage() {
         const key = element.getAttribute('data-i18n-alt');
         element.setAttribute('alt', translations[currentLanguage][key] || key);
     });
+    
+    //placeholder
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+        const key = el.getAttribute('data-i18n-placeholder');
+        el.setAttribute('placeholder', translations[currentLanguage][key] || key);
+    });
 }
 
 document.addEventListener('DOMContentLoaded', async function() {

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Detail</title>
+</head>
+<body>
+    <div class="w-full" id="content"></div>
+    <div class="max-w-full mx-auto px-8 sm:px-16 lg:px-40 py-8">
+        <div class="mb-8">
+            <img id="blogImage" src="" alt="Blog Image" class="w-full rounded-lg">
+        </div>
+        <h1 class="text-2xl font-bold mb-4" data-i18n="blog_heading_detail"></h1>
+        <p class="text-gray-700 mb-4" data-i18n="blog_intro"></p>
+        <hr class="my-4">
+        <div class="flex italic justify-between text-gray-500 text-sm">
+            <span data-i18n="blog_author_date"></span>
+        </div>
+        <hr class="my-4">
+        <div class="flex justify-between text-gray-400 hover:text-black cursor-pointer">
+            <span data-i18n="blog_read_more"></span>
+            <span data-i18n="blog_comments"></span>
+        </div>
+        <div class="mt-8">
+            <h2 class="text-xl font-semibold" data-i18n="blog_contribute_heading"></h2>
+            <form class="mt-4">
+                <input type="text" placeholder="" class="form-input w-full mb-4 p-2 border rounded" data-i18n-placeholder="form_name">
+                <input type="email" placeholder="" class="form-input w-full mb-4 p-2 border rounded" data-i18n-placeholder="form_email">
+                <textarea placeholder="" class="form-input w-full mb-4 p-2 border rounded" rows="4" data-i18n-placeholder="form_comment"></textarea>
+                <button type="submit" class="bg-black hover:bg-green-900 text-white font-bold py-2 px-4 rounded" data-i18n="form_submit"></button>
+            </form>
+        </div>
+    </div>
+    <div class="w-full" id="footer"></div>
+    
+    <script src="../asset/scripts/translate.js"> </script>
+    <script src="../asset/scripts/navbar.js"> </script>
+    <script src="../asset/scripts/footer.js"> </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../asset/scripts/blog.js"></script>
+</body>
+</html>
