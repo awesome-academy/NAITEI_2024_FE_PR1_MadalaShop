@@ -1,20 +1,15 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../asset/output.css" rel="stylesheet">
-    <link href="../asset/css/navbar.css" rel="stylesheet"> 
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> 
-    <script src="../asset/scripts/translate.js"> </script>
+    <link href="../asset/css/navbar.css" rel="stylesheet">  
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="../asset/scripts/navbar.js"></script>
     <title>navbar</title>
 </head>
 <body>
-   <!-- Nút thay đổi ngôn ngữ -->
-   <button onclick="setLanguage('en')">English</button>
-   <button onclick="setLanguage('vi')">Tiếng Việt</button>
-
   <header class="bg-white">
     <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
       <div class="flex lg:flex-1">
@@ -24,10 +19,12 @@
       </div>
       
       <div class="hidden lg:flex lg:gap-x-12 ">
-        <a href="#"  class=" text-sm font-semibold leading-6 text-gray-900"><p data-i18n="home"></p></a>
-        <a href="#" data-i18n="about"  class=" text-sm font-semibold leading-6 text-gray-900"></a>
+       
+        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Trang chủ</a>
+        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Giới thiệu</a>
         <div class="relative group ">
-          <button data-i18n="product" type="button" class=" dropdown-btn flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900" aria-expanded="false">
+          <button type="button" class=" dropdown-btn flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900" aria-expanded="false">
+            Sản Phẩm
             <svg class="h-5 w-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
               <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
             </svg>
@@ -35,13 +32,13 @@
   
           <div class="dropdown-content absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
             <div class="p-4 ">
-              product menu content placeboo
+              product menu content
             </div>
           </div>
         </div>
-        <a href="#" data-i18n="news" class="text-sm font-semibold leading-6 text-gray-900"></a>
-        <a href="#" data-i18n="map" class="text-sm font-semibold leading-6 text-gray-900"></a>
-        <a href="#" data-i18n="contact" class="text-sm font-semibold leading-6 text-gray-900"></a>
+        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Tin tức</a>
+        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Bản đồ</a>
+        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Liên hệ</a>
         
       </div>
 
@@ -50,7 +47,9 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
       </label>
+
       <input type="checkbox" class="nav-input hidden" id="nav-m-input" >
+
       <!-- Mobile menu, show/hide based on menu open state. -->
     <div class=" mobile-nav" role="dialog" aria-modal="true">
       <div class="fixed inset-0 z-10"></div>
@@ -68,11 +67,13 @@
         <div class="mt-6 flow-root">
           <div class="-my-6 divide-y divide-gray-500/10">
             <div class="space-y-2 py-6">
-              <a href="#" data-i18n="home" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"></a>
-              <a href="#" data-i18n="about" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"></a>
+              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Trang chủ</a>
+              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Giới thiệu</a>
 
               <div class="-mx-3">
-                <button data-i18n="product" type="button" class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50" aria-controls="disclosure-1" aria-expanded="false">
+                <button type="button" class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50" aria-controls="disclosure-1" aria-expanded="false">
+                  Product
+
                   <svg class="h-5 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                     <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
                   </svg>
@@ -81,9 +82,9 @@
                   product menu content here
                 </div>
               </div>
-              <a href="#" data-i18n="news" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"></a>
-              <a href="#" data-i18n="map" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"></a>
-              <a href="#" data-i18n="contact" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"></a>
+              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Tin tức</a>
+              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Bản đồ</a>
+              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Liên hệ</a>
             </div>
             <div class="py-6">
             </div>
