@@ -149,5 +149,19 @@
     "account_name": "GiangLe",
     "account_email": "Leanhtgiang89@gmail.com",
     "account_address": "Hanoi Group Building, 442 Doi Can, Ba Dinh, Hanoi",
-    "account_phone": "(04) 3786 8904"
+    "account_phone": "(04) 3786 8904",
+    "register.title": "Register",
+    "breadcrumb.home": "Home",
+    "breadcrumb.register": "Register",
+    "register.heading": "Register",
+    "register.personal_info": "PERSONAL INFORMATION",
+    "register.first_name": "First Name *",
+    "register.last_name": "Last Name *",
+    "register.email": "Email *",
+    "register.password": "Password *",
+    "register.newsletter": "Subscribe to newsletter",
+    "register.login_info": "LOGIN INFORMATION",
+    "register.confirm_password": "Confirm Password *",
+    "register.submit": "SUBMIT",
+    "register.back": "BACK"
 }
