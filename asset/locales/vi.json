@@ -149,5 +149,19 @@
     "account_name": "GiangLe",
     "account_email": "Leanhtgiang89@gmail.com",
     "account_address": "Tòa nhà Hà Nội group 442 Đội Cấn, Ba Đình Hà Nội",
-    "account_phone": "(04) 3786 8904"
+    "account_phone": "(04) 3786 8904",
+    "register.title": "Đăng ký",
+    "breadcrumb.home": "Trang chủ",
+    "breadcrumb.register": "Đăng ký",
+    "register.heading": "Đăng ký",
+    "register.personal_info": "THÔNG TIN CÁ NHÂN",
+    "register.first_name": "Tên trước *",
+    "register.last_name": "Tên sau *",
+    "register.email": "Email *",
+    "register.password": "Mật khẩu *",
+    "register.newsletter": "Đăng ký nhận bản tin",
+    "register.login_info": "THÔNG TIN ĐĂNG NHẬP",
+    "register.confirm_password": "Xác nhận mật khẩu *",
+    "register.submit": "GỬI",
+    "register.back": "QUAY LẠI"
 }
