@@ -1,0 +1,19 @@
+.green-btn {
+    --tw-bg-opacity: 1;
+    background-color: rgb(121 150 41 / var(--tw-bg-opacity));
+}
+
+.blk-btn {
+    --tw-bg-opacity: 1;
+    background-color: rgb(33 33 33/ var(--tw-bg-opacity));
+}
+
+.green-btn:hover {
+    transform: translate(0px,1px);
+    color: white;
+}
+
+.blk-btn:hover {
+    transform: translate(0px,1px);
+    color: white;
+}
