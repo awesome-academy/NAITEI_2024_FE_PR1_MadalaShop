@@ -10,22 +10,18 @@
     <script src="../asset/scripts/navbar.js"></script>
     <title>navbar</title>
 </head>
-<body>
-   <!-- Nút thay đổi ngôn ngữ -->
-   <button onclick="setLanguage('en')">English</button>
-   <button onclick="setLanguage('vi')">Tiếng Việt</button>
-
+<body class="border-b">
   <header class="bg-white">
     <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
       <div class="flex lg:flex-1">
-        <a href="#" class="-m-1.5 p-1.5">
+        <a href="home.html" class="-m-1.5 p-1.5">
           <img class="h-8 w-auto" src="../asset/image/mandala.png" alt="">
         </a>
       </div>
       
       <div class="hidden lg:flex lg:gap-x-12 ">
-        <a href="#"  class=" text-sm font-semibold leading-6 text-gray-900"><p data-i18n="home"></p></a>
-        <a href="#" data-i18n="about"  class=" text-sm font-semibold leading-6 text-gray-900"></a>
+        <a href="home.html" class=" text-sm font-semibold leading-6 text-gray-900"><p data-i18n="home"></p></a>
+        <a href="about-us.html" data-i18n="about"  class=" text-sm font-semibold leading-6 text-gray-900"></a>
         <div class="relative group ">
           <button data-i18n="product" type="button" class=" dropdown-btn flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900" aria-expanded="false">
             <svg class="h-5 w-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -35,13 +31,12 @@
   
           <div class="dropdown-content absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
             <div class="p-4 ">
-              product menu content placeboo
+              <a href="product-list.html">sản phẩm</a>
             </div>
           </div>
         </div>
-        <a href="#" data-i18n="news" class="text-sm font-semibold leading-6 text-gray-900"></a>
-        <a href="#" data-i18n="map" class="text-sm font-semibold leading-6 text-gray-900"></a>
-        <a href="#" data-i18n="contact" class="text-sm font-semibold leading-6 text-gray-900"></a>
+        <a href="blog.html" data-i18n="news" class="text-sm font-semibold leading-6 text-gray-900"></a>
+        <a href="contactus.html" data-i18n="contact" class="text-sm font-semibold leading-6 text-gray-900"></a>
         
       </div>
 
@@ -56,8 +51,8 @@
       <div class="fixed inset-0 z-10"></div>
       <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
         <div class="flex items-center justify-between">
-          <a href="#" class="-m-1.5 p-1.5">
-            <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
+          <a href="home.html" class="-m-1.5 p-1.5">
+            <img class="h-8 w-auto" src="../asset/image/mandala.png" alt="">
           </a>
           <label class="cursor-pointer" for="nav-m-input">
             <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
@@ -68,8 +63,8 @@
         <div class="mt-6 flow-root">
           <div class="-my-6 divide-y divide-gray-500/10">
             <div class="space-y-2 py-6">
-              <a href="#" data-i18n="home" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"></a>
-              <a href="#" data-i18n="about" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"></a>
+              <a href="home.html" data-i18n="home" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"></a>
+              <a href="about-us.html" data-i18n="about" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"></a>
 
               <div class="-mx-3">
                 <button data-i18n="product" type="button" class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50" aria-controls="disclosure-1" aria-expanded="false">
@@ -81,9 +76,8 @@
                   product menu content here
                 </div>
               </div>
-              <a href="#" data-i18n="news" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"></a>
-              <a href="#" data-i18n="map" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"></a>
-              <a href="#" data-i18n="contact" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"></a>
+              <a href="blog.html" data-i18n="news" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"></a>
+              <a href="contactus.html" data-i18n="contact" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"></a>
             </div>
             <div class="py-6">
             </div>
@@ -94,15 +88,37 @@
 
       <div class="flex lg:flex-1 gap-x-12 justify-end">
         <a href="#" class="text-sm font-semibold leading-6 text-gray-900">
-          <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="cart-alt-1" class="icon glyph"><path d="M10.62,14l-1,2H19a1,1,0,0,1,0,2H9.62a2,2,0,0,1-1.79-2.89L8.9,13,5.32,4H3A1,1,0,0,1,3,2H5.32A2,2,0,0,1,7.18,3.26L7.88,5H20.8l.09,0a1,1,0,0,1,.48.05,1,1,0,0,1,.56,1.3l-2.8,7a1,1,0,0,1-.93.63Zm-.12,5A1.5,1.5,0,1,0,12,20.5,1.5,1.5,0,0,0,10.5,19Zm6,0A1.5,1.5,0,1,0,18,20.5,1.5,1.5,0,0,0,16.5,19Z" style="fill:#231f20"></path></svg> 
+          <a href="cart.html"><img class="w-5 h-5" src="../asset/icon/cart-alt-1-svgrepo-com.svg" alt=""></a>
         </a>
-        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">
-          <svg fill="#000000" width="20px" height="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12.027 9.92L16 13.95 14 16l-4.075-3.976A6.465 6.465 0 0 1 6.5 13C2.91 13 0 10.083 0 6.5 0 2.91 2.917 0 6.5 0 10.09 0 13 2.917 13 6.5a6.463 6.463 0 0 1-.973 3.42zM1.997 6.452c0 2.48 2.014 4.5 4.5 4.5 2.48 0 4.5-2.015 4.5-4.5 0-2.48-2.015-4.5-4.5-4.5-2.48 0-4.5 2.014-4.5 4.5z" fill-rule="evenodd"/>
-          </svg>
-        </a>
+        <div class="relative group ">
+          <button type="button" class=" dropdown-btn flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900" aria-expanded="false">
+            <a class="cursor-pointer" href="login.html"><img class="w-5 h-5" src="../asset/icon/acc.svg" alt=""></a>
+          </button>
+          <div class="dropdown-content absolute -right-8 top-full z-10 mt-3  max-w-md w-32 overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
+            <div class="p-4 mx-auto">
+                 <!-- Nút thay đổi ngôn ngữ -->
+              <div  data-i18n="login"></div></a>
+              <div data-i18n="logout"></div>
+            </div>
+          </div>
+        </div>
+        <div class="relative group ">
+          <button type="button" class=" dropdown-btn flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900" aria-expanded="false">
+            <img class="w-5 h-5" src="../asset/icon/language-svgrepo-com.svg" alt="">
+          </button>
+          <div class="dropdown-content absolute -right-8 top-full z-10 mt-3  max-w-md w-32 overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
+            <div class="p-4 ">
+                 <!-- Nút thay đổi ngôn ngữ -->
+              <div><button onclick="setLanguage('en')">English</button></div>
+              <div><button onclick="setLanguage('vi')">Tiếng Việt</button></div>
+            </div>
+          </div>
+        </div>
       </div>
     </nav>
   </header>
 </body>
+
+
+
 </html>
