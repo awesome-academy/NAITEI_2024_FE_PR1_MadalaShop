@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
-<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 <link href="../asset/css/breadcrumb.css" rel="stylesheet">
 
-<title>about us</title>
+<title>About us</title>
 
 <body>
     <div class="w-full border-b" id="content"></div>
     <div class="breadcrumb">
-        <p class="breaditem">home</p> 
+        <p class="breaditem" data-i18n="breadcrumb.home"></p> 
         <p class="mx-2">></p>
-        <p class="breadcrumb-active">cart</p>
+        <p class="breadcrumb-active" data-i18n="about_title"></p>
     </div>
-    <div class="mt-12 mx-36">
+    <div class="mt-12 mx-36 mb-8">
         <div class="flex">
             <h1 class="text-4xl font-semibold page mr-10 ">
                 <p data-i18n="about_us" class="mb-8"> </p>
@@ -27,8 +26,13 @@
             </div>
         </div>
     </div>
+    <div class="w-full" id="footer"></div>
+
     <script src="../asset/scripts/navbar.js"></script>
-    <script src="../asset/scripts/translate.js"></script>
+    <script src="../asset/scripts/footer.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="../asset/scripts/product_detail.js"></script>
+    <script src="../asset/scripts/translate.js"></script>
 </body>
+</html>

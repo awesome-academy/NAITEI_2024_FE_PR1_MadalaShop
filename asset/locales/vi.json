@@ -214,5 +214,9 @@
     "feature":"Đặc điểm nổi bật",
     "review":"Đánh giá",
     "login":"Đăng nhập",
-    "logout":"Đăng xuất"
+    "logout":"Đăng xuất",
+    "globalvi": "Tiếng Việt",
+    "globalen": "Tiếng Anh",
+    "globalac": "Tài khoản",
+    "globalout": "Đăng xuất"
 }
