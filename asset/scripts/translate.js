@@ -10,16 +10,9 @@ function setLanguage(lang) {
 }
 
 function translatePage() {
-    //text
     document.querySelectorAll('[data-i18n]').forEach(element => {
-        const key = element.getAttribute('data-i18n');
+    const key = element.getAttribute('data-i18n');
         element.textContent = translations[currentLanguage][key] || key;
-    });
-
-    // image
-    document.querySelectorAll('[data-i18n-alt]').forEach(element => {
-        const key = element.getAttribute('data-i18n-alt');
-        element.setAttribute('alt', translations[currentLanguage][key] || key);
     });
 }
 

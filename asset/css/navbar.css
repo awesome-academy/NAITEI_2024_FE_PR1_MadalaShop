@@ -3,7 +3,7 @@
     opacity: 0;
     transform: translateY(-10px);
     display: none
-  }
+}
 
 .group:hover .dropdown-content,
 .group:focus-visible .dropdown-content {
@@ -14,9 +14,8 @@
 
 .mobile-nav {
     display: none ;
-  }
+}
 
 .nav-input:checked ~ .mobile-nav {
     display: block;
-  }
-  
+}

@@ -1,0 +1,16 @@
+.item {
+    max-height:527px;
+}
+
+.tag{
+    border: 1px solid black;
+}
+
+.tag:hover {
+    background-color: #fff; 
+}
+
+.green-btn {
+    --tw-bg-opacity: 1;
+      background-color: rgb(121 150 41 / var(--tw-bg-opacity)) /* #ffffff */;
+}
