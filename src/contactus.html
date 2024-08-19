@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="contact.title"></title>
+</head>
+<body onload="initMap()">
+    <div class="w-full" id="content"></div>
+    <div class="container mx-auto py-6 max-w-screen-lg px-4 sm:px-6 lg:px-8">
+        <div class="text-sm text-gray-500 mb-4">
+            <a href="#" class="hover:text-green-600" data-i18n="contact.breadcrumb_home"></a> > 
+            <span class="text-green-600" data-i18n="contact.breadcrumb_contact"></span>
+        </div>
+        <hr class="border-t border-gray-300 my-4">
+    </div>
+
+    <div class="container mx-auto max-w-screen-lg px-4 sm:px-6 lg:px-8 mb-12"> 
+        <h1 class="text-3xl font-bold mb-8" data-i18n="contact.heading"></h1>
+        <div class="flex flex-col lg:flex-row">
+            <!-- Map -->
+            <div id="map" class="w-full lg:w-7/12 h-96 mb-8 lg:mb-0"></div>
+            <!-- Form -->
+            <div class="w-full lg:w-5/12 lg:pl-8 flex items-stretch">
+                <div class="flex flex-col justify-between bg-white w-full h-96 p-4 sm:p-6 lg:p-4">
+                    <h2 class="text-xl font-semibold mb-4 uppercase" data-i18n="contact.send_email_heading"></h2>
+                    <form action="#" method="POST" class="flex flex-col justify-between h-full">
+                        <div>
+                            <div class="mb-4 flex items-center">
+                                <label for="name" class="block text-gray-700 mb-2 w-1/4" data-i18n="contact.name_label"></label>
+                                <input type="text" id="name" name="name" class="w-3/4 p-2 border border-gray-300 rounded" required>
+                            </div>
+                            <div class="mb-4 flex items-center">
+                                <label for="email" class="block text-gray-700 mb-2 w-1/4" data-i18n="contact.email_label"></label>
+                                <input type="email" id="email" name="email" class="w-3/4 p-2 border border-gray-300 rounded" required>
+                            </div>
+                            <div class="mb-4 flex items-start">
+                                <label for="message" class="block text-gray-700 w-1/4" data-i18n="contact.message_label"></label>
+                                <textarea id="message" name="message" class="w-3/4 p-2 border border-gray-300 rounded resize-none" rows="6" required></textarea>
+                            </div>
+                        </div>
+                        <div class="flex justify-end">
+                            <button type="submit" class="bg-black text-white font-bold py-2 px-6 rounded hover:bg-gray-800" data-i18n="contact.submit_button"></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full mt-12" id="footer"></div> 
+
+    <script src="../asset/scripts/contactus.js"></script>
+    <script src="../asset/scripts/navbar.js"></script>
+    <script src="../asset/scripts/footer.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4RdRv0kv15W66nRjPuciYZxap_xwXgWE" async defer></script>
+    <script src="../asset/scripts/translate.js"></script>
+</body>
+</html>
