@@ -1,12 +1,11 @@
-import CryptoJS from "crypto-js";
-
 document.addEventListener('DOMContentLoaded', function() {
+
     const sampleUsers = [
         {
             firstName: "Linh",
             lastName: "Bui",
             email: "linh@gmail.com",
-            password: CryptoJS.SHA256("123").toString(), 
+            password: CryptoJS.SHA256("123").toString(),
             newsletter: true,
             address: "123 Đường Lê Lợi, Quận 1, TP. Hồ Chí Minh, Việt Nam",
             phone: "+84 123 456 789",
@@ -64,5 +63,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Save data login in localStorage
         localStorage.setItem('loggedInUser', JSON.stringify(userData));
+
+        // Clear input after successful login
+        document.getElementById('email').value = '';
+        document.getElementById('password').value = '';
+
+        // Redirect sang account.html
+        window.location.href = 'account.html';
     });
 });

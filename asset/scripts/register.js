@@ -1,5 +1,3 @@
-import CryptoJS from "crypto-js";
-
 document.addEventListener('DOMContentLoaded', function() {
     const registerForm = document.getElementById('registerForm');
 
@@ -15,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const address = document.getElementById('address').value.trim();
         const newsletter = document.getElementById('newsletter').checked;
 
+        // confirm password
         if (password !== confirmPassword) {
             alert('Passwords do not match!');
             return;
@@ -34,10 +33,17 @@ document.addEventListener('DOMContentLoaded', function() {
             orders: [] 
         };
 
-        // Luu data user moi vao local storage
+        // Check xem tai khoan co chua
+        if (localStorage.getItem('user_' + email)) {
+            alert('An account with this email already exists!');
+            return;
+        }
+
+        // Lưu data user mới vào local storage
         localStorage.setItem('user_' + email, JSON.stringify(newUser));
 
-        // Redirect sang login page neu dang ky thanh cong
+        // Alert success va redirect sang login page
+        alert('Registration successful! You will now be redirected to the login page.');
         window.location.href = 'login.html';
     });
 });

@@ -172,5 +172,14 @@
     "login.email": "Email Address",
     "login.password": "Password",
     "login.forgot_password": "Forgot Password?",
-    "login.submit": "Login"
+    "login.submit": "Login",
+    "contact.title": "Contact Us",
+    "contact.breadcrumb_home": "Home",
+    "contact.breadcrumb_contact": "Contact",
+    "contact.heading": "CONTACT",
+    "contact.send_email_heading": "Send Us an Email",
+    "contact.name_label": "Name *",
+    "contact.email_label": "Email *",
+    "contact.message_label": "Message *",
+    "contact.submit_button": "Submit"
 }

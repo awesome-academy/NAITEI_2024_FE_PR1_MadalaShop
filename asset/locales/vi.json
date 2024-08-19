@@ -172,5 +172,14 @@
     "login.email": "Địa chỉ Email",
     "login.password": "Mật khẩu",
     "login.forgot_password": "Quên mật khẩu?",
-    "login.submit": "Đăng nhập"
+    "login.submit": "Đăng nhập",
+    "contact.title": "Liên hệ",
+    "contact.breadcrumb_home": "Trang chủ",
+    "contact.breadcrumb_contact": "Liên hệ",
+    "contact.heading": "LIÊN HỆ",
+    "contact.send_email_heading": "Gửi Email Cho Chúng Tôi",
+    "contact.name_label": "Tên *",
+    "contact.email_label": "Email *",
+    "contact.message_label": "Tin nhắn *",
+    "contact.submit_button": "Gửi"
 }
