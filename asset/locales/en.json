@@ -1,10 +1,10 @@
 {
     "home": "Home",
-    "about":"about",
-    "product":"product",
-    "news":"news",
-    "map":" map",
-    "contact": "contact",
+    "about":"About",
+    "product":"Product",
+    "news":"News",
+    "map":" Map",
+    "contact": "Contact",
     "cosmetics":"cosmetics",
     "jewelry":"jewelry",
     "accessories":"accessories",
@@ -214,5 +214,9 @@
     "feature":"Feature",
     "review":"Review",
     "login":"log in",
-    "logout":"log out"
+    "logout":"log out",
+    "globalvi": "Vietnamese",
+    "globalen": "English",
+    "globalac": "Account",
+    "globalout": "Log out"
 }
