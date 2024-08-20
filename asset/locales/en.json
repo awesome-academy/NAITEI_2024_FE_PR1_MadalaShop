@@ -218,5 +218,9 @@
     "globalvi": "Vietnamese",
     "globalen": "English",
     "globalac": "Account",
-    "globalout": "Log out"
+    "globalout": "Log out",
+    "watch":"watch",
+    "cart":"cart",
+    "en":"English",
+    "vi":"Vietnamese"
 }
